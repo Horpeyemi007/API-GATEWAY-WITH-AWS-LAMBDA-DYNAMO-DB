@@ -5,4 +5,4 @@ In this repository, the following AWS service are used to implement a solution f
 * `REST API GATEWAY`: Used for api endpoint to subbmit user details
 * `LAMBDA`: Used to pprocess the data from the api gateway endpoint
 * `DYNAMO DB`: Act as a database to store the user details
-* `SNS`: Used to publish notification about a new user to the company email 
+* `SNS`: Used to publish notification about a new user subscription to the company email 
