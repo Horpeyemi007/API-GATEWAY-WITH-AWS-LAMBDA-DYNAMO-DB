@@ -14,9 +14,10 @@
      <link rel="stylesheet" href="css/owl.carousel.css">
      <link rel="stylesheet" href="css/owl.theme.default.min.css">
      <link rel="stylesheet" href="css/font-awesome.min.css">
+     <link rel='shortcut icon' type='image/png' href='images/newsletterLogo.jpeg'>
 
      <!-- MAIN CSS -->
-     <link rel="stylesheet" href="css/tooplate-style.css">
+     <link rel="stylesheet" href="css/newsletter-style.css">
 
 </head>
 <body>
@@ -68,20 +69,40 @@
                     <div class="col-md-offset-3 col-md-6 col-sm-12">
                         <div class="home-info">
                             <h3>professional top tier newsleter</h3>
-                            <h1>We help you manage your website successfully!</h1>
-                            <div class="s_form">
-                                <form action="" method="get" class="online-form">
-                                    <div>
+                            <h1>We bring closer to you the latest news!</h1>
+                            <div class=""">
+                                <form class="form--submit">
+                                    <div class="form__group">
                                         <label for="fname" class="form__label"></label>
-                                        <input type="text" name="fname" class="form__input" placeholder="Enter your FirstName" required="">
+                                        <input type="text" id="fname" class="form__input" placeholder="Enter your Firstname" required="">
                                     </div>
-                                    <div>
+                                    <div class="form__group">
                                         <label for="lname" class="form__label"></label>
-                                        <input type="text" name="fname" class="form__input" placeholder="Enter your Lastname" required="">
+                                        <input type="text" id="lname" class="form__input" placeholder="Enter your Lastname" required="">
                                     </div>
-                                    <div>
+                                    <div class="form__group">
                                         <label for="email" class="form__label"></label>
-                                        <input type="email" name="email" class="form__input" placeholder="Enter your email" required="">
+                                        <input type="email" id="email" class="form__input" placeholder="Enter your Email" required="">
+                                    </div>
+                                    <div class="form__group">
+                                        <label for="country" class="form__label"></label>
+                                        <input type="text" id="country" class="form__input" placeholder="Enter your Nationality" required="">
+                                    </div>
+                                    <div class="form__group">
+                                        <label for="newsletter" class="form__label"></label>
+                                        <select name="news", id="newsType" class="select-style-one">
+                                             <option value="null">Choose Your Preferred Newsletter</option>
+                                             <option value="health">Health</option>
+                                             <option value="finance">Finance</option>
+                                             <option value="sport">Sport</option>
+                                             <option value="novel">Novel</option>
+                                             <option value="technology">Technology</option>
+                                        </select>
+                                    </div>
+                                    <div class="form__cta">
+                                        <button class="btn--cta--save">
+                                             Submit
+                                        </button>
                                     </div>
                                 </form>
                             </div>
@@ -147,7 +168,7 @@
 
                     <div class="col-md-12 col-sm-12">
                          <div class="section-title">
-                              <h1>Choose your preferred subscription</h1>
+                              <h1>Choose your preferred newsletter subscription</h1>
                          </div>
                     </div>
 
@@ -207,7 +228,8 @@
                              </div>
                          </div>
                     </div>
-          <br><br>
+                    &nbsp;
+<br><br>
                     <div class="col-md-4 col-sm-6">
                          <div class="pricing-thumb">
                              <div class="pricing-title">
@@ -276,12 +298,14 @@
 
 
      <!-- SCRIPTS -->
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.7.7/axios.min.js"></script>
      <script src="js/jquery.js"></script>
      <script src="js/bootstrap.min.js"></script>
      <script src="js/jquery.stellar.min.js"></script>
      <script src="js/owl.carousel.min.js"></script>
      <script src="js/smoothscroll.js"></script>
      <script src="js/custom.js"></script>
+     <script src="js/processData.js"></script>
 
 </body>
 </html>

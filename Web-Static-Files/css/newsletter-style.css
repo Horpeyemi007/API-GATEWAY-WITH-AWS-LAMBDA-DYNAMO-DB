@@ -56,13 +56,6 @@ http://www.tooplate.com/view/2106-soft-landing
     text-decoration: none !important;
   }
 
-  /* a,
-  input, button,
-  .form-control {
-    -webkit-transition: 0.5s;
-    transition: 0.5s;
-  } */
-
   a:hover, a:active, a:focus {
     color: #29ca8e;
     outline: none;
@@ -107,38 +100,7 @@ http://www.tooplate.com/view/2106-soft-landing
     height: 100%;
   }
 
-  .online-form {
-    position: relative;
-  }
 
-  .online-form .form-control {
-    border-color: #f0f0f0;
-    display: inline-block;
-    /* vertical-align: top; */
-    border-radius: 50px;
-    box-shadow: none;
-    height: 50px;
-    margin-right: 0.5em;
-    padding-left: 15px;
-  }
-
-  /* .online-form input[type="email"] {
-    width: 60%;
-  } */
-
-  .online-form button {
-    background: #29ca8e;
-    border: 0;
-    color: #ffffff;
-    position: absolute;
-    right: 6em;
-    width: 25%;
-  }
-
-  .online-form button:hover {
-    background: #202020;
-    color: #ffffff;
-  }
 
 
 
@@ -800,41 +762,6 @@ http://www.tooplate.com/view/2106-soft-landing
     }
   }
 
-
-  @media screen and (max-width: 480px) {
-
-    /* .online-form input[type="email"], */
-    .online-form .form-control {
-      width: 85%;
-    }
-
-    .online-form .form-control {
-      display: block;
-      margin: 20px auto;
-    }
-
-    /* .online-form button {
-      position: relative;
-      right: 0;
-    } */
-
-    .testimonial-image,
-    .testimonial-info {
-      height: 65vh;
-    }
-  }
-
-
-/* .s_form {
-  margin: 0 auto;
-  max-width: 55rem;
-  background-color: #fff;
-  -webkit-box-shadow: 0 2.5rem 8rem 2rem rgba(0, 0, 0, 0.06);
-  box-shadow: 0 2.5rem 8rem 2rem rgba(0, 0, 0, 0.06);
-  padding: 5rem 7rem;
-  border-radius: 5px;
-} */
-
 .form__label {
   display: block;
   font-size: 1.6rem;
@@ -860,6 +787,62 @@ http://www.tooplate.com/view/2106-soft-landing
   border-radius: 4px;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
-  /* Pseudo element (a visible thing that isn't really in the DOM).
-    Also needs -ms- */
+}
+
+.select-style-one{
+  border-radius: 4px;
+  /* text-transform: uppercase !important; */
+  font-size: small !important;
+  padding: 1.25rem 1.25rem;
+  width: 100%;
+  font-family: inherit;
+  color: inherit;
+  background-color: #fff;
+  background-color: #f2f2f2;
+  border-top: 3px solid transparent;
+  border-bottom: 3px solid transparent;
+}
+
+.form__cta{
+  margin-top: 2.5rem;
+  text-align: left;
+}
+.btn--cta--save{
+  padding: 1.25rem 3rem;
+  font-size: 1.4rem;
+  border-radius: 1rem;
+  text-transform: uppercase;
+  cursor: pointer;
+  text-decoration: none;
+  font-weight: 400;
+}
+
+.form__group {
+  margin-bottom: 1.0rem;
+}
+
+/* ALERT SECTION BEGIN */
+.alert {
+  position: fixed !important;
+  top: 0 !important;
+  left: 50% !important;
+  -webkit-transform: translateX(-50%) !important;
+  transform: translateX(-50%) !important;
+  z-index: 9999 !important;
+  color: #fff !important;
+  font-size: 1.8rem !important;
+  font-weight: 400 !important;
+  text-align: center !important;
+  border-bottom-left-radius: 5px !important;
+  border-bottom-right-radius: 5px !important;
+  padding: 1.6rem 15rem !important;
+  -webkit-box-shadow: 0 2rem 4rem rgba(0, 0, 0, 0.25) !important;
+  box-shadow: 0 2rem 4rem rgba(0, 0, 0, 0.25) !important;
+}
+.alert--success {
+  background-color: #20bf6b !important;
+
+}
+.alert--error {
+  background-color: #eb4d4b !important;
 }
