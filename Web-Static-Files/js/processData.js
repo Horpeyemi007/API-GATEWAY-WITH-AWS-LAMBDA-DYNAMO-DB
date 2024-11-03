@@ -4,15 +4,17 @@ const apiEndpoint =  "https://mg15fiws9l.execute-api.us-east-1.amazonaws.com/tes
 
 // NEWSLETTER SUBSCRIBERS DETAILS
 if(newsLetterSubDetails){
-  newsLetterSubDetails.addEventListener('submit', event => {
+  newsLetterSubDetails.addEventListener('submit', async event => {
     event.preventDefault();
+    document.querySelector('.btn--cta--save').textContent = 'Please wait...'; // Change the text when the api is processing the request
     const Firstname = document.getElementById('fname').value;
     const Lastname = document.getElementById('lname').value;
     const Email = document.getElementById('email').value;
     const Country = document.getElementById('country').value;
     const NewsLetterType = document.getElementById('newsType').value;
 
-    ProcessUserData(Firstname,Lastname,Email,Country,NewsLetterType);
+    await ProcessUserData(Firstname,Lastname,Email,Country,NewsLetterType);
+    document.querySelector('.btn--cta--save').textContent = 'Submit';
   });
 };
 
@@ -38,7 +40,6 @@ if(newsLetterSubDetails){
       return showAlert('success',response.data)
     }
   } catch (error) {
-    console.log(error)
     if(error.response.data){
       return showAlert('error', error.response.data);
     }
