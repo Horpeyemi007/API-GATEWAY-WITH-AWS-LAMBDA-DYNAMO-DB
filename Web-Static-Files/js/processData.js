@@ -9,7 +9,7 @@ if(newsLetterSubDetails){
     document.querySelector('.btn--cta--save').textContent = 'Please wait...'; // Change the text when the api is processing the request
     const Firstname = document.getElementById('fname').value;
     const Lastname = document.getElementById('lname').value;
-    const Email = document.getElementById('email').value;
+    const Email = document.getElementById('email').value.toLowerCase();
     const Country = document.getElementById('country').value;
     const NewsLetterType = document.getElementById('newsType').value;
 
