@@ -1,5 +1,5 @@
 <div align="center">
-  <img src="./img/newsLetterArc.png" width="200"/>
+  <img src="/img/newsLetterArc.png" alt="Alt text" width="200"/>
 </div>
 
 <br>
