@@ -1,6 +1,7 @@
-<div align="center">
+<!-- <div align="center">
   <img src="/img/newsLetterArc.png" alt="Alt text" width="200"/>
-</div>
+</div> -->
+![Alt text](/img/newsLetterArc.png "Optional title")
 
 <br>
 
