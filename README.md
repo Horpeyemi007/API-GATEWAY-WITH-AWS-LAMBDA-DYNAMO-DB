@@ -32,9 +32,9 @@ Lambda will then process the user details to be stored into the dynamodb table. 
 
 ### `Step 4`
 
-A Rest-API endpoint is created having a resource name and configured with a POST httpMethod with CORS enabled. The api will be deployed to a prod stage for a url endpoint to be created.
+A Rest-API endpoint is created having a resource name and configured with a POST httpMethod with CORS and lambda proxy integration enabled. The api will be deployed to a prod stage for a url endpoint to be created.
 
-The url is where the user will send all their request details to subscribe to the company newsletter to. The url will be put on thw static website, to receive the user input that was submitted via the form on the website.
+The url is where the user will send all their request details to subscribe to the company newsletter to. The url will be put on the static website, to receive the user input that was submitted via the form on the website.
 
 The rest-api will also be integrated with the lambda function so that it can always trigger the lambda function whenever their is an incoming request from the user.
 
