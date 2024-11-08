@@ -1,7 +1,9 @@
 <!-- <div align="center">
   <img src="https://github.com/Horpeyemi007/API-GATEWAY-WITH-AWS-LAMBDA-DYNAMO-DB/blob/master/img/newsLetterArc.png" alt="Alt text" width="200"/>
 </div> -->
-![Alt text](/img/newsLetterArc.jpg "Optional title")
+<!-- ![Alt text](/img/newsLetterArc.jpg "Optional title") -->
+
+![alt text](https://github.com/Horpeyemi007/API-GATEWAY-WITH-AWS-LAMBDA-DYNAMO-DB/blob/master/img/newsLetterArc.png?raw=true")
 
 <br>
 
