@@ -2,7 +2,7 @@
 
 <br>
 
-In this repository, the following AWS service are used to implement a solution for a company that needs to receive a notification about the details of the users that subscribe to its newsletter.
+### In this repository, the following AWS service are used to implement a solution for a company that needs to receive a notification about the details of the users that subscribe to its newsletter.
 
 ### Service Used
 
