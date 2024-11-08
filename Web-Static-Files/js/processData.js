@@ -1,6 +1,6 @@
 const newsLetterSubDetails = document.querySelector('.form--submit');
 
-const apiEndpoint =  "https://mg15fiws9l.execute-api.us-east-1.amazonaws.com/test/newsletter"
+const apiEndpoint =  "https://mg15fiws9l.execute-api.us-east-1.amazonaws.com/prod/newsletter"
 
 // NEWSLETTER SUBSCRIBERS DETAILS
 if(newsLetterSubDetails){
