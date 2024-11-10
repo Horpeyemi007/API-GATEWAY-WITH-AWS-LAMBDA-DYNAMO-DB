@@ -4,6 +4,7 @@
 
 [newsletterServerless]: https://github.com/Horpeyemi007/API-GATEWAY-WITH-AWS-LAMBDA-DYNAMO-DB/blob/master/Lambda/newsletterServerless.js
 [newsletterNotification]: https://github.com/Horpeyemi007/API-GATEWAY-WITH-AWS-LAMBDA-DYNAMO-DB/blob/master/Lambda/newsletterNotification.js
+[Web-Static-Files]: https://github.com/Horpeyemi007/API-GATEWAY-WITH-AWS-LAMBDA-DYNAMO-DB/tree/master/Web-Static-Files
 
 ### In this repository, the following AWS service are used to implement a solution for a company that needs to receive a notification about the details of the users that register for its newsletter.
 
@@ -21,7 +22,7 @@
 
 The S3 bucket is used to hold the client static website for the newsletter. The user interact with the website through their browser pointing to the S3 endpoint where the files are hosted.
 
-The folder `Web-Static-Files` in this repository contains the static web page.
+The folder [_`Web-Static-Files`_][Web-Static-Files] in this repository contains the static web page.
 
 To host the web page on the AWS S3, a bucket is created and the files are uploaded into it and also the bucket is made public, ACls are enabled for the object and the static website hosting features is enabled.
 
