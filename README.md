@@ -2,7 +2,10 @@
 
 <br>
 
-### In this repository, the following AWS service are used to implement a solution for a company that needs to receive a notification about the details of the users that subscribe to its newsletter.
+[newsletterServerless]: https://github.com/Horpeyemi007/API-GATEWAY-WITH-AWS-LAMBDA-DYNAMO-DB/blob/master/Lambda/newsletterServerless.js
+[newsletterNotification]: https://github.com/Horpeyemi007/API-GATEWAY-WITH-AWS-LAMBDA-DYNAMO-DB/blob/master/Lambda/newsletterNotification.js
+
+### In this repository, the following AWS service are used to implement a solution for a company that needs to receive a notification about the details of the users that register for its newsletter.
 
 ### Service Used
 
@@ -30,7 +33,7 @@ The dynamodb stream is also enabled on this table for any new items that is been
 
 ### `Step 3`
 
-A lambda function with a name _`newsletterServerless`_ is created that will perform business logic to get the details of the user that wants to subscribe to the company newsletter. Lambda will get the details through the rest-api that the user submit their request to.
+A lambda function with a name [_`newsletterServerless`_][newsletterServerless] is created that will perform business logic to get the details of the user that wants to subscribe to the company newsletter. Lambda will get the details through the rest-api that the user submit their request to.
 
 Lambda will then process the user details to be stored into the dynamodb table. The lambda function will also be configured to have the necessary permission to interact with the dynamodb table.
 
@@ -44,10 +47,10 @@ The rest-api will also be integrated with the lambda function so that it can alw
 
 ### `Step 5`
 
-Another lambda function with the name  _`newsletterNotification`_ is created which will interact with the dynamodb stream whenever their is a new event on the dynamodb table. The dynamodb stream will be configured to triggered this lambda function, as the lambda function will get the information about any new records that is been saved on the dynamodb table.
+Another lambda function with the name [_`newsletterNotification`_][newsletterNotification] is created which will interact with the dynamodb stream whenever their is a new event on the dynamodb table. The dynamodb stream will be configured to triggered this lambda function, as the lambda function will get the information about any new records that is been saved on the dynamodb table.
 
 ### `Step 6`
 
 An SNS topic will be created with an email type subscription. This is where the company will receive an email notification about any new user that has shown interest to subscribe to their newsletter.
 
-The lambda function _`newsletterNotification`_ will be configured to send email notification to the company email address whenever their is an event by the dynamoDB stream. The lambda function will get the details of the user through the dynamodb stream event details, extract the name and email address of the new user and process an email notification with the new user details to the company email.
+The lambda function [_`newsletterNotification`_][newsletterNotification] will be configured to send email notification to the company email address whenever their is an event by the dynamoDB stream. The lambda function will get the details of the user through the dynamodb stream event details, extract the name and email address of the new user and process an email notification with the new user details to the company email.
