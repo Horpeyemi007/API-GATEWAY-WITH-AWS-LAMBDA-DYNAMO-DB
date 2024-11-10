@@ -1,6 +1,4 @@
-<img src="./img/newsLetterArc.jpg" alt="img arc" width="500"/>
-
-<br>
+<!-- <img src="./img/newsLetterArc.jpg" alt="img arc" width="500"/> -->
 
 [newsletterServerless]: https://github.com/Horpeyemi007/API-GATEWAY-WITH-AWS-LAMBDA-DYNAMO-DB/blob/master/Lambda/newsletterServerless.js
 [newsletterNotification]: https://github.com/Horpeyemi007/API-GATEWAY-WITH-AWS-LAMBDA-DYNAMO-DB/blob/master/Lambda/newsletterNotification.js
